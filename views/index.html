@@ -13,6 +13,9 @@
       chart-colours='colors' chart-legend="true"
       chart-data="trumpData" chart-labels="labels">
     </canvas>
+    <div>
+      Total {{ trumpTotal() }}
+    </div>
   </div>
   <div class='col-md-2 col-lg-4'>
     <img class='img' src='../img/hillary.png'>
@@ -20,10 +23,14 @@
   <div class='col-md-4 col-lg-8'>
     <span class='name'>#StrongerTogether</span>
     <canvas id="clinton" class="chart chart-doughnut"
-    chart-colours='colors' chart-legend="true"
-    chart-data="clintonData" chart-labels="labels">
-  </canvas>
-</div>
+      chart-colours='colors' chart-legend="true"
+      chart-data="clintonData" chart-labels="labels">
+    </canvas>
+    <div>
+      Total {{ clintonTotal() }}
+    </div>
+  </div>
+
 </div>
 <br><br>
 <div class='row'>
@@ -40,6 +47,9 @@
               <div class="row">
                 <div class="col-md-12">
                     {{tweet}}
+                </div>
+                <div class="col-md-12">
+                  {{source}}
                 </div>
               </div>
             </div>

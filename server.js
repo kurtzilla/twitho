@@ -19,7 +19,7 @@ var client = new Twitter({
   access_token_secret: config.access_token_secret
 });
 
-var hashtags = '#Trump, #StrongerTogether';
+var hashtags = '#Trump, #lunatic, #StrongerTogether, #pneumonia';
 
 client.stream('statuses/filter', {track: hashtags}, function(stream) {
   stream.on('data', function(tweet) {
